@@ -1,3 +1,4 @@
+
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -5,9 +6,15 @@
 
 export interface Artifact {
   id: string;
-  styleName: string;
-  html: string;
-  status: 'streaming' | 'complete' | 'error';
+  type: 'html' | 'image' | 'video' | 'text' | 'error';
+  title: string;
+  content: string; // HTML code, Image Base64/URL, Video URL, or Text Markdown
+  metadata?: {
+      groundingChunks?: any[];
+      usageMetadata?: any;
+      model?: string;
+  };
+  status: 'streaming' | 'complete' | 'error' | 'waiting';
 }
 
 export interface Session {

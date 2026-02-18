@@ -1,14 +1,17 @@
+
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
 export const INITIAL_PLACEHOLDERS = [
-    "Security Dashboard with interactive Rule Builder and Alert Banners",
-    "Model Performance Cost Playground with multi-model side-by-side comparison",
-    "Compliance Audit Hub with interactive PII masking and risk rule management",
-    "AI Agent Observability with ReAct loop visualization and budget alerts",
-    "Executive Governance Hub for multi-tenant LLM spend forecasting",
-    "Security Threat Command Center with interactive threshold rule definition",
-    "Prompt Engineering Lab for benchmarking GPT-4 vs Claude Sonnet"
+    "Agentic Orchestration Graph with node-based workflow editor and step-debugging",
+    "Model Context Protocol (MCP) Registry with tool availability status and latency metrics",
+    "LLM Guardrails Configuration with PII masking thresholds and topic blocking rules",
+    "RAG Vector Database Health Monitor showing embedding dimensions and index fragmentation",
+    "Multi-Agent Swarm Control Plane with role assignment and inter-agent message logs",
+    "Token Economics Dashboard for detailed cost-per-token analysis and budget forecasting",
+    "Fine-tuning Job Manager with loss curves, hyperparameter tuning, and checkpoint selection",
+    "AI Employee Roster showing active skills, memory context usage, and performance rating",
+    "Prompt Engineering Playground with version history, variable injection, and diff view"
 ];

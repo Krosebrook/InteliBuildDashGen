@@ -1,35 +1,33 @@
-# ⚡ Flash UI Studio
 
-Flash UI Studio is a world-class, professional-grade interface generation workbench. It leverages the latest Gemini 3 Flash models to transform complex enterprise requirements into high-fidelity, interactive React-style dashboard components.
+# 🧠 AIaaS Architect
 
-## 🚀 Vision
-To bridge the gap between "concept" and "high-fidelity prototype" for Staff Platform Engineers and Lead UI/UX Designers. Flash UI Studio doesn't just generate layouts; it generates **intelligent systems**.
+**AIaaS Architect** is a specialized generative engine for building infrastructure components for Artificial Intelligence as a Service platforms. It leverages Gemini 3 Flash to generate high-fidelity, interactive configurations for Agents, MCP Tools, RAG Pipelines, and Guardrails.
+
+## 🤖 Capabilities
+- **Agent Swarms:** Generate UIs for managing autonomous employees, assigning skills, and monitoring memory usage.
+- **MCP Registries:** Build Model Context Protocol tool catalogs with connection health and latency metrics.
+- **Guardrails:** Create safety dashboards for PII masking, jailbreak detection, and topic blocking.
+- **Token Economics:** Visualize cost-per-token, budget forecasting, and rate-limiting rules.
+- **Vector Ops:** Monitor RAG vector database indexing, shard health, and embedding dimensions.
 
 ## 🛠 Tech Stack
 - **Engine:** Google Gemini 3 Flash (via `@google/genai`)
-- **Frontend:** React 19 (Modern functional components & Hooks)
-- **Styling:** Professional-grade "Studio" CSS (Slate/Zinc palette, Glassmorphism, Ease-out-expo transitions)
-- **Persistence:** LocalStorage-backed state hydration for offline-capable workbench history
-- **Platform:** PWA (Progressive Web App) with standalone manifest support
+- **Frontend:** React 19 + TypeScript
+- **Styling:** "DevTools" Aesthetic (Monospace/Inter mix, Cyan/Teal accents)
+- **State:** LocalStorage persistence for system log history.
 
-## ✨ Core Features
-- **Intelligent Studio Directions:** Every prompt generates 3 distinct conceptual directions (e.g., *Cybernetic Ops*, *Aero Dynamic*, *Neomorphic Lab*).
-- **Interactive Rule Builders:** Deep support for Security and Compliance dashboards with metric threshold definitions and persistent alert systems.
-- **Model Comparison Playground:** Side-by-side benchmarking for LLMs, including latency, quality scores, and token usage visualization.
-- **Workbench History:** Full persistence of your design sessions, allowing you to return to any previous concept.
-- **High-Fidelity Code Export:** One-click source code extraction for integration into production environments.
-- **Studio Variations:** Generate radical alternative versions of any existing artifact without losing context.
+## 🛡 Error Handling
 
-## 📦 Project Structure
-- `index.tsx`: Core application logic and Gemini API orchestration.
-- `index.css`: Professional-grade design system and workbench aesthetics.
-- `components/`: Modular UI units (Drawers, Cards, Backgrounds, Icons).
-- `types.ts`: TypeScript definitions for the Studio ecosystem.
-- `constants.ts`: High-density prompt presets and configuration.
+The application utilizes centralized middleware to manage routing errors and exceptions gracefully.
 
-## 🚦 Getting Started
-Simply enter a prompt in the Studio Command Bar at the bottom of the screen. 
-*Example:* "Design a multi-tenant cost governance dashboard with budget threshold alerts and token usage forecasting."
+### Middleware Overview
+- **404 Catch-All:** The `notFoundHandler` intercepts any request that does not match a defined route and returns a standardized JSON 404 response.
+- **Global Error Handler:** The `errorHandler` sits at the end of the middleware stack. It catches exceptions propagated via `next(err)`, logs the stack trace, and sanitizes the response to the client.
+
+## 🚀 Getting Started
+1. **Enter a System Prompt:** e.g., "Multi-Agent Orchestrator for Customer Support" or "LLM Guardrail Configuration Panel".
+2. **Review Paradigms:** The system generates 3 architectural views (e.g., Graph View, Data Grid, Control Plane).
+3. **Export Code:** One-click export of vanilla JS/HTML components ready for integration.
 
 ---
-*Created with ❤️ by the Flash UI Team*
+*Powered by Google Gemini 3 Flash*
